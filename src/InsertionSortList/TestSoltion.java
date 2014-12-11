@@ -1,8 +1,7 @@
-package sortList;
+package InsertionSortList;
 
-import java.util.LinkedList;
 
-public class TestSolution {
+public class TestSoltion {
 
 	/**
 	 * @param args
@@ -18,14 +17,14 @@ public class TestSolution {
 			node = tempNode;
 			
 		}
+
+		ListNode result = new Solution().insertionSortList(head);
 		
-		ListNode temp = new Solution().sortList(node);
-		for(;;){
-			if(temp.next!=null){
-				System.out.println(temp.val);
-			}
+		while(result.next!=null){
+			System.out.println(result.val);
+			result = result.next;
 		}
-		
+ 
 	}
 
 }
